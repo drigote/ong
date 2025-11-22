@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salud Cercana ONG — Proyectos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="listaproyectos.css" />
+    <link rel="icon" type="image/png" href="./imgong/logo2ong.png">
+
+</head>
+
+<body>
+    <header class="contenedor-encabezado">
+        <div class="caja-logo">
+            <img src="./imgong/logo2ong.png" alt="Logo Salud Cercana ONG">
+            <div class="texto-logo-contenedor">
+                <span class="texto-logo">Salud Cercana</span>
+                <span class="texto-lema">La prevención empieza en tu barrio</span>
+            </div>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA (solo mobile) -->
+        <div class="zona-menu" id="zona-menu">
+            <nav class="barra-navegacion" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <!-- HOME -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Home
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./inicioong.html">Introducción</a></li>
+                            <li><a href="./inicioong.html#inicio-proyectos">Proyectos destacados</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NOSOTROS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Nosotros
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./mision.html">Misión, visión, valores</a></li>
+                            <li><a href="./historia.html">Historia</a></li>
+                            <li><a href="./equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- PROYECTOS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Proyectos
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="listaproyectos.html#lista-proyectos">Lista de proyectos</a></li>
+                            <li><a href="listaproyectos.html#galeria">Galería de imágenes</a></li>
+                            <li><a href="listaproyectos.html#progreso">Progreso de proyectos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INVOLUCRATE -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Involucrate
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="donacion.html">Donaciones</a></li>
+                            <li><a href="voluntariado.html">Voluntariado</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Contacto
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="contacto.html">Formulario</a></li>
+                            <li><a href="informacion.html">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="donacion.html" class="boton-donar boton-donar-menu">Donar ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Introduccion -->
+        <section class="seccion-portada-proyectos">
+            <div class="contenedor-portada-proyectos">
+                <h1>Nuestros proyectos en territorio</h1>
+                <p>
+                    Cada proyecto de Salud Cercana nace de escuchar a los barrios y trabajar junto a las
+                    organizaciones locales. Combinamos controles básicos, educación en salud y acompañamiento
+                    comunitario para que la prevención llegue a quienes más la necesitan.
+                </p>
+            </div>
+        </section>
+
+        <!-- Lista proyectos -->
+        <section id="lista-proyectos" class="seccion-lista-proyectos">
+            <h2>Lista de proyectos</h2>
+            <p class="texto-seccion">
+                Estos son los programas que llevamos adelante actualmente en distintos barrios de CABA y AMBA.
+                Podés conocer su objetivo, las actividades principales y a quiénes benefician.
+            </p>
+
+            <div class="grid-proyectos-detalle">
+
+                <article class="tarjeta-proyecto-detalle">
+                    <h3>Clínica móvil barrial</h3>
+                    <p class="etiqueta-estado estado-curso">En curso</p>
+                    <p class="resumen-proyecto">
+                        Dispositivo itinerante que recorre clubes, escuelas y centros comunitarios realizando
+                        controles básicos de salud y orientación personalizada.
+                    </p>
+                    <ul class="lista-detalle">
+                        <li>Controles de presión arterial y glucemia capilar.</li>
+                        <li>Entrega de material informativo y derivaciones según necesidad.</li>
+                        <li>Articulación con centros de salud cercanos.</li>
+                    </ul>
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="./imgong/colectivosalud.jpg" alt="Clínica móvil barrial en actividad">
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto-detalle">
+                    <h3>Talleres de hábitos saludables</h3>
+                    <p class="etiqueta-estado estado-activo">Activo</p>
+                    <p class="resumen-proyecto">
+                        Encuentros educativos para niñas, niños, adolescentes y personas adultas sobre alimentación,
+                        movimiento, sueño y salud emocional.
+                    </p>
+                    <ul class="lista-detalle">
+                        <li>Talleres en escuelas, comedores y organizaciones sociales.</li>
+                        <li>Material didáctico y dinámicas participativas.</li>
+                        <li>Acompañamiento a docentes y referentes comunitarios.</li>
+                    </ul>
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="./imgong/tallerhabit.jpg" alt="Taller de hábitos saludables con la comunidad">
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto-detalle">
+                    <h3>Acompañamiento a personas con enfermedades crónicas</h3>
+                    <p class="etiqueta-estado estado-curso">En curso</p>
+                    <p class="resumen-proyecto">
+                        Espacios grupales y dispositivos de seguimiento para personas con hipertensión, diabetes
+                        u otras enfermedades crónicas.
+                    </p>
+
+                    <ul class="lista-detalle">
+                        <li>Grupos de educación terapéutica y apoyo entre pares.</li>
+                        <li>Recordatorios de turnos y controles periódicos.</li>
+                        <li>Articulación con equipos de salud y servicios sociales.</li>
+                    </ul>
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="./imgong/cuidarcronic.jpg"
+                            alt="Reunión de acompañamiento a personas con enfermedades crónicas">
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto-detalle">
+                    <h3>Kits de prevención para familias</h3>
+                    <p class="etiqueta-estado estado-nuevo">En implementación</p>
+                    <p class="resumen-proyecto">
+                        Entrega de kits de prevención y cuidado básico en salud, acompañados de instancias
+                        breves de orientación y seguimiento.
+                    </p>
+                    <ul class="lista-detalle">
+                        <li>Kits con insumos de higiene, folletería y elementos de control simple.</li>
+                        <li>Identificación de familias con mayor vulnerabilidad sanitaria.</li>
+                        <li>Visitas domiciliarias de seguimiento según cada caso.</li>
+                    </ul>
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="./imgong/kitsanitario.jpg" alt="Entrega de kits de prevención a familias">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria" class="seccion-galeria">
+            <h2>Galería de imágenes</h2>
+            <p class="texto-seccion">
+                Algunas escenas de las jornadas, talleres y actividades que realizamos junto a las comunidades.
+            </p>
+
+            <div class="carrusel-galeria" id="carrusel-galeria">
+
+                <!-- boton anterior -->
+                <button class="carrusel-control carrusel-prev" aria-label="Imagen anterior">
+                    &#10094;
+                </button>
+
+                <!-- carrusel -->
+                <div class="carrusel-ventana">
+                    <div class="carrusel-pista">
+                        <div class="carrusel-item">
+                            <img src="./imgong/controlvecinal.jpg"
+                                alt="Voluntarios realizando controles de salud en el barrio">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="./imgong/controlvecinal2.jpg" alt="Taller educativo con familias y niños">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="./imgong/controlsig.jpg" alt="Entrega de kits de prevención a familias">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="./imgong/controlvecinal4.jpg" alt="Actividad comunitaria al aire libre">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- boton para carrusel -->
+                <button class="carrusel-control carrusel-next" aria-label="Imagen siguiente">
+                    &#10095;
+                </button>
+            </div>
+
+            <!-- carrusel -->
+            <div class="carrusel-indicadores">
+                <button type="button" class="indicador activo" data-indice="0" aria-label="Ir a la imagen 1"></button>
+                <button type="button" class="indicador" data-indice="1" aria-label="Ir a la imagen 2"></button>
+                <button type="button" class="indicador" data-indice="2" aria-label="Ir a la imagen 3"></button>
+                <button type="button" class="indicador" data-indice="3" aria-label="Ir a la imagen 4"></button>
+            </div>
+        </section>
+
+        <!-- progreso que va con animacion -->
+        <section id="progreso" class="seccion-progreso">
+            <h2>Progreso de los proyectos</h2>
+            <p class="texto-seccion">
+                Monitoreamos constantemente el avance de nuestros programas para mejorar las acciones y
+                rendir cuentas con transparencia a la comunidad y a las personas que apoyan la organización.
+            </p>
+
+            <div class="lista-progreso">
+                <article class="fila-progreso">
+                    <div class="info-progreso">
+                        <h3>Clínica móvil barrial</h3>
+                        <p>Jornadas realizadas en 2025: 18 de 24 planificadas.</p>
+                    </div>
+                    <div class="barra-progreso">
+                        <div class="barra-progreso-completa" style="width: 75%;"></div>
+                    </div>
+                    <p class="porcentaje">75%</p>
+                </article>
+
+                <article class="fila-progreso">
+                    <div class="info-progreso">
+                        <h3>Talleres de hábitos saludables</h3>
+                        <p>Talleres dictados: 32 de 40 previstos para el año.</p>
+                    </div>
+                    <div class="barra-progreso">
+                        <div class="barra-progreso-completa" style="width: 80%;"></div>
+                    </div>
+                    <p class="porcentaje">80%</p>
+                </article>
+
+                <article class="fila-progreso">
+                    <div class="info-progreso">
+                        <h3>Acompañamiento a personas con enfermedades crónicas</h3>
+                        <p>Personas en seguimiento activo: 120 de 150 cupos disponibles.</p>
+                    </div>
+                    <div class="barra-progreso">
+                        <div class="barra-progreso-completa" style="width: 80%;"></div>
+                    </div>
+                    <p class="porcentaje">80%</p>
+                </article>
+
+                <article class="fila-progreso">
+                    <div class="info-progreso">
+                        <h3>Kits de prevención para familias</h3>
+                        <p>Kits entregados: 260 de 400 planificados.</p>
+                    </div>
+                    <div class="barra-progreso">
+                        <div class="barra-progreso-completa" style="width: 65%;"></div>
+                    </div>
+                    <p class="porcentaje">65%</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <h3>Salud Cercana</h3>
+                <p>Llevamos prevención y salud comunitaria a barrios vulnerables de CABA y AMBA.</p>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Involucrate</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@saludcercana.org</p>
+                <p>CABA, Argentina</p>
+
+                <div class="redes-pie">
+                    <a href="https://www.instagram.com/" class="icono-red" aria-label="Instagram de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class="icono-red"
+                        aria-label="Facebook de Salud Cercana" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="icono-red" aria-label="YouTube de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-copyright">
+            <p>© 2025 Salud Cercana. Desarrollado por Rodrigo Barconte</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

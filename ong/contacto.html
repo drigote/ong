@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salud Cercana ONG — Contacto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="icon" type="image/png" href="./imgong/logo2ong.png">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="contenedor-encabezado">
+        <div class="caja-logo">
+            <img src="./imgong/logo2ong.png" alt="Logo Salud Cercana ONG">
+            <div class="texto-logo-contenedor">
+                <span class="texto-logo">Salud Cercana</span>
+                <span class="texto-lema">La prevención empieza en tu barrio</span>
+            </div>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA (solo mobile) -->
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="zona-menu">
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+        </button>
+
+        <!--(nav + botón donar) -->
+        <div class="zona-menu" id="zona-menu">
+            <nav class="barra-navegacion" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <!-- HOME -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Home
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./inicioong.html">Introducción</a></li>
+                            <li><a href="./inicioong.html#inicio-proyectos">Proyectos destacados</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NOSOTROS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Nosotros
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./mision.html">Misión, visión, valores</a></li>
+                            <li><a href="./historia.html">Historia</a></li>
+                            <li><a href="./equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- PROYECTOS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Proyectos
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="listaproyectos.html#lista-proyectos">Lista de proyectos</a></li>
+                            <li><a href="listaproyectos.html#galeria">Galería de imágenes</a></li>
+                            <li><a href="listaproyectos.html#progreso">Progreso de proyectos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INVOLUCRATE -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Involucrate
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="donacion.html">Donaciones</a></li>
+                            <li><a href="voluntariado.html">Voluntariado</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Contacto
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="contacto.html">Formulario</a></li>
+                            <li><a href="informacion.html">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="donacion.html" class="boton-donar boton-donar-menu">Donar ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- FORMULARIO-->
+        <section id="formulario-contacto" class="seccion-contacto">
+            <div class="contenedor-contacto">
+                <div class="encabezado-contacto">
+                    <h1>Formulario de contacto</h1>
+                    <p>
+                        Si querés hacer una consulta, proponer una alianza o recibir más información
+                        sobre nuestros proyectos, completá el formulario y nuestro equipo se
+                        comunicará con vos a la brevedad.
+                    </p>
+                </div>
+
+                <form class="formulario-contacto" action="#" method="post">
+                    <div class="fila-campos">
+                        <div class="campo-formulario campo-obligatorio">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="campo-formulario campo-obligatorio">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="fila-campos">
+                        <div class="campo-formulario campo-obligatorio campo-icono">
+                            <label for="correo">Correo electrónico</label>
+                            <div class="entrada-con-icono">
+                                <span class="icono-input">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <input type="email" id="correo" name="correo" placeholder="tu-correo@ejemplo.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="campo-formulario campo-icono">
+                            <label for="telefono">Teléfono (opcional)</label>
+                            <div class="entrada-con-icono">
+                                <span class="icono-input">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+54 11 0000-0000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campo-formulario campo-obligatorio">
+                        <label for="motivo">Motivo de la consulta</label>
+                        <div class="select-contenedor">
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>Elegí una opción</option>
+                                <option value="info-proyectos">Quiero más información sobre los proyectos</option>
+                                <option value="donaciones">Consulta sobre donaciones</option>
+                                <option value="voluntariado">Quiero sumarme como voluntario/a</option>
+                                <option value="alianzas">Propuesta de alianza o institución</option>
+                                <option value="otros">Otros motivos</option>
+                            </select>
+                            <span class="icono-select">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="proyecto-interes">Proyecto de interés (opcional)</label>
+                        <select id="proyecto-interes" name="proyecto-interes">
+                            <option value="" selected>Ninguno en particular</option>
+                            <option value="clinica-movil">Clínica móvil barrial</option>
+                            <option value="talleres-habitos">Talleres de hábitos saludables</option>
+                            <option value="cronicos">Acompañamiento a personas con enfermedades crónicas</option>
+                            <option value="escuelas">Acciones en escuelas y clubes barriales</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario campo-obligatorio">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required
+                            placeholder="Contanos en qué podemos ayudarte..."></textarea>
+                    </div>
+
+                    <div class="fila-campos fila-checkbox">
+                        <label class="check-acepto">
+                            <input type="checkbox" id="acepto-contacto" name="acepto-contacto" required>
+                            <span>Autorizo a Salud Cercana a contactarme por los medios proporcionados.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="boton-primario boton-enviar">
+                        Enviar mensaje
+                    </button>
+
+                    <p class="nota-campos">
+                        Respondemos las consultas dentro de los 2 a 3 días hábiles. Los campos marcados con
+                        <span class="asterisco">*</span> son obligatorios.
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section id="informacion-contacto" class="seccion-contacto-info">
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <h3>Salud Cercana</h3>
+                <p>Llevamos prevención y salud comunitaria a barrios vulnerables de CABA y AMBA.</p>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Involucrate</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@saludcercana.org</p>
+                <p>CABA, Argentina</p>
+
+                <div class="redes-pie">
+                    <a href="https://www.instagram.com/" class="icono-red" aria-label="Instagram de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="icono-red" aria-label="Facebook de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="icono-red" aria-label="YouTube de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-copyright">
+            <p>© 2025 Salud Cercana. Desarollado por Rodrigo Barconte</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

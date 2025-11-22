@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salud Cercana ONG — Voluntariado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="voluntariado.css" />
+    <link rel="icon" type="image/png" href="./imgong/logo2ong.png">
+
+</head>
+
+<body>
+    <header class="contenedor-encabezado">
+        <div class="caja-logo">
+            <img src="./imgong/logo2ong.png" alt="Logo Salud Cercana ONG">
+            <div class="texto-logo-contenedor">
+                <span class="texto-logo">Salud Cercana</span>
+                <span class="texto-lema">La prevención empieza en tu barrio</span>
+            </div>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA (solo mobile) -->
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="zona-menu">
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+        </button>
+
+        <!--nav y boton -->
+        <div class="zona-menu" id="zona-menu">
+            <nav class="barra-navegacion" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <!-- HOME -->
+                    <li class="item-navegacion">
+                        <a  class="enlace-navegacion">
+                            Home
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./inicioong.html">Introducción</a></li>
+                            <li><a href="./inicioong.html#inicio-proyectos">Proyectos destacados</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NOSOTROS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Nosotros
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./mision.html">Misión, visión, valores</a></li>
+                            <li><a href="./historia.html">Historia</a></li>
+                            <li><a href="./equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- PROYECTOS -->
+                    <li class="item-navegacion">
+                        <a  class="enlace-navegacion">
+                            Proyectos
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="listaproyectos.html#lista-proyectos">Lista de proyectos</a></li>
+                            <li><a href="listaproyectos.html#galeria">Galería de imágenes</a></li>
+                            <li><a href="listaproyectos.html#progreso">Progreso de proyectos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INVOLUCRATE -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Involucrate
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="donacion.html">Donaciones</a></li>
+                            <li><a href="voluntariado.html">Voluntariado</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Contacto
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="contacto.html">Formulario</a></li>
+                            <li><a href="informacion.html">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="donacion.html" class="boton-donar boton-donar-menu">Donar ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-portada-voluntariado">
+            <div class="contenedor-portada-voluntariado">
+                <h1>Sumate como voluntario o voluntaria</h1>
+                <p>
+                    Tu tiempo y tu compromiso pueden transformar la experiencia de salud de muchas personas.
+                    Podés acompañar operativos, talleres y proyectos comunitarios según tus intereses y disponibilidad.
+                </p>
+            </div>
+        </section>
+
+        <section class="seccion-voluntariado">
+            <div class="contenedor-voluntariado">
+                <!-- Columna texto -->
+                <div class="columna-texto-voluntariado">
+                    <span class="etiqueta-seccion">Voluntariado</span>
+                    <h2>¿Cómo es ser parte de Salud Cercana?</h2>
+                    <p>
+                        Los equipos de voluntariado acompañan a profesionales de la salud, trabajadores sociales
+                        y referentes comunitarios en distintos dispositivos barriales. No hace falta tener formación
+                        en salud para sumarte: lo más importante es la escucha, el respeto y las ganas de construir
+                        barrios más cuidados.
+                    </p>
+
+                    <ul class="lista-aportes">
+                        <li>Colaborar en la organización de jornadas y controles básicos.</li>
+                        <li>Acompañar talleres de hábitos saludables en escuelas y centros comunitarios.</li>
+                        <li>Participar en campañas de difusión y armado de kits de prevención.</li>
+                    </ul>
+
+                    <div class="tarjetas-modalidad">
+                        <article class="tarjeta-modalidad">
+                            <h3>Voluntariado puntual</h3>
+                            <p>Ideal si podés asistir a jornadas específicas o campañas en determinadas fechas.</p>
+                        </article>
+                        <article class="tarjeta-modalidad">
+                            <h3>Voluntariado sostenido</h3>
+                            <p>Para quienes desean participar de forma más regular en un mismo barrio o proyecto.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- formulario -->
+                <div class="tarjeta-formulario-voluntariado">
+                    <h2>Quiero ser voluntario/a</h2>
+                    <p class="texto-intro-formulario">
+                        Completá este formulario y el equipo de Salud Cercana se pondrá en contacto para contarte
+                        los próximos pasos.
+                    </p>
+
+                    <form action="#" method="post" class="formulario-voluntariado">
+                        <div class="fila-doble">
+                            <div class="campo-formulario">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ejemplo: Ana">
+                            </div>
+                            <div class="campo-formulario">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required placeholder="Ejemplo: Pérez">
+                            </div>
+                        </div>
+
+                        <div class="fila-doble">
+                            <div class="campo-formulario">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="Ejemplo: ana.perez@mail.com">
+                            </div>
+                            <div class="campo-formulario">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 11 1234 5678">
+                            </div>
+                        </div>
+
+                        <div class="fila-doble">
+                            <div class="campo-formulario">
+                                <label for="edad">Edad</label>
+                                <input type="number" id="edad" name="edad" min="18" max="80" required
+                                    placeholder="Ej: 27">
+                            </div>
+                            <div class="campo-formulario">
+                                <label for="barrio">Barrio / Localidad</label>
+                                <input type="text" id="barrio" name="barrio" placeholder="Ejemplo: La Boca, CABA">
+                            </div>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="disponibilidad">Disponibilidad horaria</label>
+                            <input type="text" id="disponibilidad" name="disponibilidad"
+                                placeholder="Ejemplo: Sábados por la mañana, una vez al mes">
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="experiencia">¿Tenés experiencia previa en salud o trabajo comunitario?</label>
+                            <textarea id="experiencia" name="experiencia" rows="3"
+                                placeholder="Contanos brevemente si participaste en otras organizaciones o proyectos."></textarea>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label>¿En qué áreas te gustaría ser voluntario/a?</label>
+                            <div class="grupo-opciones">
+                                <label class="opcion-checkbox">
+                                    <input type="checkbox" name="area" value="operativos">
+                                    <span>Operativos de salud barriales</span>
+                                </label>
+                                <label class="opcion-checkbox">
+                                    <input type="checkbox" name="area" value="talleres">
+                                    <span>Talleres de hábitos saludables</span>
+                                </label>
+                                <label class="opcion-checkbox">
+                                    <input type="checkbox" name="area" value="cronicos">
+                                    <span>Acompañamiento a personas con enfermedades crónicas</span>
+                                </label>
+                                <label class="opcion-checkbox">
+                                    <input type="checkbox" name="area" value="comunicacion">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="comentarios">Comentarios o información adicional</label>
+                            <textarea id="comentarios" name="comentarios" rows="3"
+                                placeholder="Cualquier dato que consideres importante (discapacidad, idioma, etc.)."></textarea>
+                        </div>
+
+                        <div class="campo-formulario campo-check">
+                            <label class="opcion-checkbox">
+                                <span>Acepto que Salud Cercana se comunique conmigo para coordinar el
+                                    voluntariado.</span>
+                                <input type="checkbox" name="autorizacion" required>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="boton-primario boton-enviar-voluntariado">
+                            Enviar formulario
+                        </button>
+
+                        <p class="nota-privacidad">
+                            Tus datos serán utilizados únicamente para gestionar tu participación como voluntario/a
+                            en Salud Cercana y no serán compartidos con terceros sin tu autorización.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-cierre-voluntariado">
+            <p>
+                Si por el momento no podés sumarte como voluntario/a pero querés apoyar los proyectos, también podés
+                colaborar con una <a href="donacion.html">donación económica</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- footer-->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <h3>Salud Cercana</h3>
+                <p>Llevamos prevención y salud comunitaria a barrios vulnerables de CABA y AMBA.</p>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Donaciones</a></li>
+                    <li><a href="#">Voluntariado</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@saludcercana.org</p>
+                <p>CABA, Argentina</p>
+
+                <div class="redes-pie">
+                    <a href="https://www.instagram.com/" class="icono-red" aria-label="Instagram de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class="icono-red"
+                        aria-label="Facebook de Salud Cercana" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="icono-red" aria-label="YouTube de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-copyright">
+            <p>© 2025 Salud Cercana. Desarrollado por Rodrigo Barconte</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

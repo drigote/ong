@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salud Cercana ONG — Información de contacto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="informacion.css" />
+    <link rel="icon" type="image/png" href="./imgong/logo2ong.png">
+
+</head>
+
+<body>
+    <header class="contenedor-encabezado">
+        <div class="caja-logo">
+            <img src="./imgong/logo2ong.png" alt="Logo Salud Cercana ONG">
+            <div class="texto-logo-contenedor">
+                <span class="texto-logo">Salud Cercana</span>
+                <span class="texto-lema">La prevención empieza en tu barrio</span>
+            </div>
+        </div>
+
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="zona-menu">
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+        </button>
+
+        <!-- NAV + BOTÓN DONAR -->
+        <div class="zona-menu" id="zona-menu">
+            <nav class="barra-navegacion" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <!-- HOME -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Home
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./inicioong.html">Introducción</a></li>
+                            <li><a href="./inicioong.html#inicio-proyectos">Proyectos destacados</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NOSOTROS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Nosotros
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./mision.html">Misión, visión, valores</a></li>
+                            <li><a href="./historia.html">Historia</a></li>
+                            <li><a href="./equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- PROYECTOS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Proyectos
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="listaproyectos.html#lista-proyectos">Lista de proyectos</a></li>
+                            <li><a href="listaproyectos.html#galeria">Galería de imágenes</a></li>
+                            <li><a href="listaproyectos.html#progreso">Progreso de proyectos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INVOLUCRATE -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Involucrate
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="donacion.html">Donaciones</a></li>
+                            <li><a href="voluntariado.html">Voluntariado</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Contacto
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="contacto.html">Formulario</a></li>
+                            <li><a href="informacion.html">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="donacion.html" class="boton-donar boton-donar-menu">Donar ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="informacion-contacto" class="seccion-info-contacto">
+            <div class="contenedor-info-contacto">
+                <!-- Intro -->
+                <div class="bloque-info-contacto">
+                    <h1>Información de contacto</h1>
+                    <p class="intro-info-contacto">
+                        Si querés saber más sobre nuestros proyectos, proponer una alianza o coordinar actividades en tu
+                        barrio, podés escribirnos o visitarnos en nuestra oficina.
+                    </p>
+                </div>
+
+                <!-- Datos + Mapa -->
+                <div class="layout-info-mapa">
+                    <div class="lista-datos-contacto">
+                        <!-- Dirección -->
+                        <article class="dato-contacto">
+                            <div class="icono-dato-contacto">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="texto-dato-contacto">
+                                <h3>Oficina central</h3>
+                                <p>Salud Cercana ONG</p>
+                                <p>UADE - Lima 717, CABA, Argentina</p>
+                                <p class="nota-dato-contacto">
+                                    A pocas cuadras de las estaciones de subte de las líneas C y E, y de varias líneas
+                                    de colectivo.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Correo -->
+                        <article class="dato-contacto">
+                            <div class="icono-dato-contacto">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="texto-dato-contacto">
+                                <h3>Correo electrónico</h3>
+                                <p>contacto@saludcercana.org</p>
+                                <p class="nota-dato-contacto">
+                                    Respondemos la mayoría de las consultas dentro de las 48 horas hábiles.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Teléfono -->
+                        <article class="dato-contacto">
+                            <div class="icono-dato-contacto">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="texto-dato-contacto">
+                                <h3>Teléfono / WhatsApp</h3>
+                                <p>+54 9 11 5555-5555</p>
+                                <p class="nota-dato-contacto">
+                                    Lunes a viernes de 9 a 18 h (hora Argentina).
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Redes -->
+                        <article class="dato-contacto">
+                            <div class="icono-dato-contacto">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="texto-dato-contacto">
+                                <h3>Redes sociales</h3>
+                                <p>Seguinos para conocer próximos operativos, campañas y oportunidades de voluntariado.
+                                </p>
+                                <div class="redes-inline">
+                                    <a href="https://www.instagram.com/" target="_blank"
+                                        aria-label="Instagram Salud Cercana">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"
+                                        aria-label="Facebook Salud Cercana">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/" target="_blank"
+                                        aria-label="YouTube Salud Cercana">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Mapa -->
+                    <aside class="tarjeta-mapa-contacto">
+                        <h2>¿Dónde estamos?</h2>
+                        <p>
+                            Nuestro equipo se mueve por distintos barrios de CABA y el AMBA, pero la base operativa se
+                            encuentra en la Universidad Argentina de la Empresa (UADE), donde coordinamos las acciones y
+                            reuniones con voluntarios y aliados.
+                        </p>
+
+                        <div class="contenedor-mapa">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.93729388915!2d-58.39351369030548!3d-34.604557917260244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1763764432929!5m2!1ses-419!2sar"
+                                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section class="seccion-faq-contacto">
+            <div class="contenedor-faq-contacto">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="lista-preguntas-contacto">
+                    <article class="pregunta-contacto">
+                        <h3>¿Quiénes pueden participar de las actividades?</h3>
+                        <p>
+                            Todas las personas son bienvenidas. Priorizamos a familias y comunidades en situación de
+                            vulnerabilidad, pero muchas propuestas también están abiertas a escuelas, centros barriales
+                            y organizaciones aliadas.
+                        </p>
+                    </article>
+
+                    <article class="pregunta-contacto">
+                        <h3>¿Cobran por los controles y talleres?</h3>
+                        <p>
+                            No. Nuestros controles básicos y talleres de prevención son gratuitos para las personas que
+                            asisten. Los proyectos se financian con donaciones individuales, alianzas institucionales y
+                            el trabajo voluntario.
+                        </p>
+                    </article>
+
+                    <article class="pregunta-contacto">
+                        <h3>¿Cómo propongo una actividad en mi barrio?</h3>
+                        <p>
+                            Podés escribirnos a <strong>contacto@saludcercana.org</strong> contándonos brevemente dónde
+                            vivís, qué necesidades detectás y qué organizaciones ya están trabajando en la zona.
+                            Nuestro equipo se comunicará para evaluar juntos la mejor forma de acompañar.
+                        </p>
+                    </article>
+
+                    <article class="pregunta-contacto">
+                        <h3>¿Entregan certificados para voluntarios?</h3>
+                        <p>
+                            Sí. En actividades de mediana y larga duración emitimos constancias de participación, que
+                            detallan el tipo de tarea realizada y la cantidad de horas aproximadas de voluntariado.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <h3>Salud Cercana</h3>
+                <p>Llevamos prevención y salud comunitaria a barrios vulnerables de CABA y AMBA.</p>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Involucrate</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@saludcercana.org</p>
+                <p>CABA, Argentina</p>
+
+                <div class="redes-pie">
+                    <a href="https://www.instagram.com/" class="icono-red" aria-label="Instagram de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class="icono-red"
+                        aria-label="Facebook de Salud Cercana" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="icono-red" aria-label="YouTube de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-copyright">
+            <p>© 2025 Salud Cercana. Desarrollado por Rodrigo Barconte</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-image:
+        linear-gradient(rgba(244, 244, 244, 0.315),
+            rgba(244, 244, 244, 0.96)),
+        url("./imgong/volunteer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333333;
+}
+
+/* HEADER  */
+
+.contenedor-encabezado {
+    background-color: #ffffff;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 10px 32px;
+    border-bottom: 4px solid #9ccf51;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.caja-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.caja-logo img {
+    height: 64px;
+    width: auto;
+    object-fit: cover;
+}
+
+.texto-logo-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.texto-lema {
+    font-size: 0.85rem;
+    color: #555555;
+}
+
+/* NAV + ZONA MENÚ */
+
+.zona-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.barra-navegacion {
+    flex: 1;
+}
+
+.lista-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.item-navegacion {
+    position: relative;
+}
+
+.enlace-navegacion {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 999px;
+    color: #333333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.enlace-navegacion:hover {
+    background-color: #9bb443;
+    color: #222222;
+}
+
+/* SUBMENÚS  */
+
+.submenu-navegacion {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 8px 0;
+    box-shadow: 0 6px 18px rgba(29, 97, 45, 0.5);
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    z-index: 10;
+}
+
+.item-navegacion:hover .submenu-navegacion {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.submenu-navegacion li a {
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.submenu-navegacion li a:hover {
+    background-color: #9bb443;
+}
+
+/* BOTÓN DONAR */
+
+.boton-donar {
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 999px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: #9bb443;
+    color: #222222;
+    box-shadow: 0 4px 10px rgba(29, 97, 45, 0.5);
+    transition: background-color 0.2s ease, transform 0.1s ease,
+        box-shadow 0.15s ease;
+    white-space: nowrap;
+}
+
+.boton-donar:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* BOTÓN MENÚ HAMBURGUESA celu*/
+
+.boton-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 40px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #d0d7dd;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.boton-menu .linea {
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    border-radius: 999px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* animación hamburguesa */
+
+.boton-menu.activo .linea:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.boton-menu.activo .linea:nth-child(2) {
+    opacity: 0;
+}
+
+.boton-menu.activo .linea:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* BOTONES GENERALES */
+
+.boton-primario,
+.boton-secundario {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.15s ease;
+}
+
+.boton-primario {
+    background-color: #9bb443;
+    color: #222222;
+    box-shadow: 0 4px 10px rgba(29, 97, 45, 0.5);
+}
+
+.boton-primario:hover {
+    background-color: #9bb443;
+    transform: translateY(-1px);
+}
+
+.boton-secundario {
+    background-color: #007e96;
+    color: #ffffff;
+}
+
+.boton-secundario:hover {
+    background-color: #005f6b;
+    transform: translateY(-1px);
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: 24px auto 48px;
+    padding: 24px 18px 40px;
+    background-color: #f4f4f4;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* PORTADA VOLUNTARIADO */
+
+.seccion-portada-voluntariado {
+    text-align: center;
+    padding: 18px 12px 26px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #e7f5d6, #f9faf7);
+    margin-bottom: 28px;
+}
+
+.contenedor-portada-voluntariado {
+    max-width: 760px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer-deslizar 0.8s ease-out forwards;
+}
+
+.seccion-portada-voluntariado h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #25305e;
+    margin-bottom: 10px;
+}
+
+.seccion-portada-voluntariado p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+/* SECCIÓN VOLUNTARIADO */
+
+.seccion-voluntariado {
+    margin-bottom: 32px;
+}
+
+.contenedor-voluntariado {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Columna texto */
+
+.columna-texto-voluntariado {
+    flex: 1 1 280px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer-deslizar 0.8s ease-out forwards;
+}
+
+.etiqueta-seccion {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #5c7c1a;
+    background-color: #e6f1c9;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+}
+
+.columna-texto-voluntariado h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.9rem;
+    color: #273366;
+    margin-bottom: 10px;
+}
+
+.columna-texto-voluntariado p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.lista-aportes {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+.lista-aportes li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.lista-aportes li::before {
+    content: "•";
+    position: absolute;
+    left: 7px;
+    top: 0;
+    color: #9bb443;
+    font-size: 1.2rem;
+}
+
+/* Tarjetas modalidades */
+
+.tarjetas-modalidad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.tarjeta-modalidad {
+    flex: 1 1 160px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 12px 14px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-modalidad h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #273366;
+    margin-bottom: 4px;
+}
+
+.tarjeta-modalidad p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.tarjeta-modalidad:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Tarjeta formulario */
+
+.tarjeta-formulario-voluntariado {
+    flex: 1 1 320px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 20px 18px 22px;
+    border: 1px solid #dde4ea;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer-deslizar 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+.tarjeta-formulario-voluntariado h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    color: #273366;
+    margin-bottom: 6px;
+}
+
+.texto-intro-formulario {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+/* Formulario */
+
+.formulario-voluntariado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fila-doble {
+    display: flex;
+    gap: 10px;
+}
+
+.fila-doble .campo-formulario {
+    flex: 1;
+}
+
+.campo-formulario label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #c3ced8;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: #f7f9fb;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: 2px solid #9bb443;
+    border-color: #9bb443;
+    background-color: #ffffff;
+}
+
+/* checkbox */
+
+.grupo-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.opcion-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.opcion-checkbox input[type="checkbox"] {
+    margin-top: 2px;
+}
+
+.campo-check {
+    margin-top: 4px;
+}
+
+/* Botón enviar */
+
+.boton-enviar-voluntariado {
+    margin-top: 6px;
+    width: 100%;
+}
+
+.nota-privacidad {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* CIERRE VOLUNTARIADO */
+
+.seccion-cierre-voluntariado {
+    margin-top: 8px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background-color: #e7f5ff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.seccion-cierre-voluntariado a {
+    color: #005b8e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.seccion-cierre-voluntariado a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+
+.pie-pagina {
+    background-color: #003849;
+    color: #f4f4f4;
+    padding-top: 22px;
+    margin-top: 12px;
+}
+
+.contenedor-pie {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 18px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.columna-pie h3,
+.columna-pie h4 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+}
+
+.columna-pie p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.columna-pie ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.columna-pie ul li {
+    margin-bottom: 4px;
+}
+
+.columna-pie ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.columna-pie ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Iconos footer */
+
+.redes-pie {
+    margin-top: 6px;
+    display: flex;
+    gap: 10px;
+}
+
+.icono-red {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffb948;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #003849;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.icono-red:hover {
+    background-color: #ffffff;
+    color: #003849;
+    transform: translateY(-1px);
+}
+
+.texto-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 8px 18px 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #d0d0d0;
+}
+
+
+@keyframes aparecer-deslizar {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .contenedor-encabezado {
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 16px 8px 32px;
+        padding: 20px 14px 30px;
+        border-radius: 14px;
+    }
+
+    .contenedor-encabezado {
+        gap: 10px;
+    }
+
+    .boton-menu {
+        display: flex;
+    }
+    .zona-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e3e3e3;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        padding: 12px 16px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 200;
+        display: none;
+    }
+
+    .zona-menu.menu-abierto {
+        display: flex;
+    }
+
+    .lista-navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .enlace-navegacion {
+        padding: 6px 4px;
+        border-radius: 6px;
+    }
+
+    .submenu-navegacion {
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        box-shadow: none;
+        padding: 4px 0 4px 12px;
+        margin-top: 2px;
+    }
+
+    .submenu-navegacion li a {
+        padding: 4px 0;
+        font-size: 0.88rem;
+    }
+
+    .boton-donar-menu {
+        align-self: stretch;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contenedor-voluntariado {
+        flex-direction: column;
+    }
+
+    .tarjeta-formulario-voluntariado {
+        order: -1;
+    }
+
+    .fila-doble {
+        flex-direction: column;
+    }
+
+    .tarjetas-modalidad {
+        gap: 8px;
+    }
+
+    .tarjeta-modalidad {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion-portada-voluntariado h1 {
+        font-size: 1.7rem;
+    }
+}

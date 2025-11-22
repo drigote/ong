@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salud Cercana ONG — Donaciones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="donacion.css" />
+    <link rel="icon" type="image/png" href="./imgong/logo2ong.png">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="contenedor-encabezado">
+        <div class="caja-logo">
+            <img src="./imgong/logo2ong.png" alt="Logo Salud Cercana ONG">
+            <div class="texto-logo-contenedor">
+                <span class="texto-logo">Salud Cercana</span>
+                <span class="texto-lema">La prevención empieza en tu barrio</span>
+            </div>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA (solo mobile) -->
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="zona-menu">
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+        </button>
+
+        <!-- ZONA MENÚ (nav + botón donar) -->
+        <div class="zona-menu" id="zona-menu">
+            <nav class="barra-navegacion" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <!-- HOME -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Home
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./inicioong.html">Introducción</a></li>
+                            <li><a href="./inicioong.html#inicio-proyectos">Proyectos destacados</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NOSOTROS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Nosotros
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="./mision.html">Misión, visión, valores</a></li>
+                            <li><a href="./historia.html">Historia</a></li>
+                            <li><a href="./equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- PROYECTOS -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Proyectos
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="listaproyectos.html#lista-proyectos">Lista de proyectos</a></li>
+                            <li><a href="listaproyectos.html#galeria">Galería de imágenes</a></li>
+                            <li><a href="listaproyectos.html#progreso">Progreso de proyectos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INVOLUCRATE -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Involucrate
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="donacion.html">Donaciones</a></li>
+                            <li><a href="voluntariado.html">Voluntariado</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="item-navegacion">
+                        <a class="enlace-navegacion">
+                            Contacto
+                        </a>
+                        <ul class="submenu-navegacion">
+                            <li><a href="contacto.html">Formulario</a></li>
+                            <li><a href="informacion.html">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="donacion.html" class="boton-donar boton-donar-menu">Donar ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- DONACIÓN -->
+        <section class="seccion-portada-donacion">
+            <div class="contenedor-portada-donacion">
+                <h1>Tu donación se convierte en salud real</h1>
+                <p>
+                    Cada aporte permite sostener controles básicos, compra de insumos y talleres en barrios donde
+                    el acceso al sistema de salud es limitado. Conocé de forma simple el impacto de lo que podés dar.
+                </p>
+            </div>
+        </section>
+
+        <!--CALCULADORA -->
+        <section id="donaciones" class="seccion-donaciones">
+            <div class="contenedor-donaciones">
+                <!-- Columna texto -->
+                <div class="columna-texto-donaciones">
+                    <span class="etiqueta-seccion">Donaciones</span>
+                    <h2>Convertí tu aporte en acciones concretas</h2>
+                    <p>
+                        Trabajamos junto a equipos de salud y referentes comunitarios para que cada peso se traduzca
+                        en controles, acompañamiento y prevención. Tus donaciones son el motor que sostiene estos
+                        espacios.
+                    </p>
+
+                    <ul class="lista-impacto">
+                        <li>Financiás controles de presión, glucemia y consejerías breves.</li>
+                        <li>Acercás kits de higiene y prevención a familias en situación de vulnerabilidad.</li>
+                        <li>Apoyás talleres barriales sobre alimentación, movimiento y salud emocional.</li>
+                    </ul>
+
+                    <div class="tarjetas-impacto-rapido">
+                        <article class="tarjeta-impacto-rapido">
+                            <span class="numero-impacto-rapido">1</span>
+                            <p>control básico de salud en una jornada comunitaria.</p>
+                        </article>
+                        <article class="tarjeta-impacto-rapido">
+                            <span class="numero-impacto-rapido">3</span>
+                            <p>kits de prevención entregados a familias de un mismo barrio.</p>
+                        </article>
+                        <article class="tarjeta-impacto-rapido">
+                            <span class="numero-impacto-rapido">10</span>
+                            <p>cupos en talleres de hábitos saludables para vecinos y vecinas.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Columna calculadora -->
+                <div id="calculadora-impacto" class="tarjeta-calculadora">
+                    <h2>Calculá tu impacto</h2>
+                    <p class="texto-intro-calculadora">
+                        Elegí el tipo de aporte, el monto y conocé cuántos kits, controles o talleres
+                        podés hacer posibles con tu donación.
+                    </p>
+
+                    <!-- Tabs frecuencia -->
+                    <div class="calc-toggle">
+                        <button type="button" class="calc-tab calc-tab-activo" data-frecuencia="una-vez">
+                            Donación única
+                        </button>
+                        <button type="button" class="calc-tab" data-frecuencia="mensual">
+                            Donación mensual
+                        </button>
+                    </div>
+
+                    <!-- Montos rápidos -->
+                    <div class="calc-montos">
+                        <button type="button" class="monto-btn" data-monto="2000">$2.000</button>
+                        <button type="button" class="monto-btn" data-monto="4000">$4.000</button>
+                        <button type="button" class="monto-btn" data-monto="8000">$8.000</button>
+                        <button type="button" class="monto-btn" data-monto="12000">$12.000</button>
+                    </div>
+
+                    <!-- Otro monto -->
+                    <div class="calc-otro-monto">
+                        <label for="monto">O ingresá otro monto</label>
+                        <div class="campo-monto-input">
+                            <span class="prefijo-monto">$</span>
+                            <input type="number" id="monto" min="0" step="100" placeholder="Ejemplo: 5000">
+                        </div>
+                    </div>
+
+                    <!-- Tipo de impacto -->
+                    <div class="calc-impacto-tipo">
+                        <label for="tipo-impacto">Quiero apoyar principalmente</label>
+                        <select id="tipo-impacto">
+                            <option value="kits">Kits de prevención</option>
+                            <option value="controles">Controles básicos de salud</option>
+                            <option value="talleres">Talleres de hábitos saludables</option>
+                        </select>
+                    </div>
+
+                    <!-- Botón calcular -->
+                    <button type="button" id="btn-calcular" class="boton-primario boton-calcular">
+                        Calcular impacto
+                    </button>
+
+                    <!-- Resultado -->
+                    <div class="resultado-calculadora">
+                        <span id="resultado-cantidad" class="cantidad">0</span>
+                        <p id="resultado-detalle" class="detalle">
+                            Ingresá un monto para ver el impacto estimado de tu donación.
+                        </p>
+                    </div>
+
+                    <p class="texto-aclaracion-calculadora">
+                        Los valores son orientativos y se ajustan según los costos reales de cada proyecto.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-cierre-donacion">
+            <p>
+                Si necesitás más información sobre otras formas de colaborar (aportes de empresas, donaciones en
+                especie o campañas especiales), podés escribirnos desde la sección
+                <a href="contacto.html#formulario-contacto">Contacto</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <h3>Salud Cercana</h3>
+                <p>Llevamos prevención y salud comunitaria a barrios vulnerables de CABA y AMBA.</p>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Donaciones</a></li>
+                    <li><a href="#">Voluntariado</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-pie">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@saludcercana.org</p>
+                <p>CABA, Argentina</p>
+
+                <div class="redes-pie">
+                    <a href="https://www.instagram.com/" class="icono-red" aria-label="Instagram de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class="icono-red"
+                        aria-label="Facebook de Salud Cercana" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="icono-red" aria-label="YouTube de Salud Cercana"
+                        target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-copyright">
+            <p>© 2025 Salud Cercana. Desarollado por Rodrigo Barconte</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
