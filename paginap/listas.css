@@ -1,0 +1,243 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAEBD7;
+}
+
+header {
+  margin-top: 10px;
+  background-color: #efbb76;
+  color: #000000;
+  padding: 12px 0;
+  text-align: center;
+  box-shadow: 0 8px 25px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+h1 {
+  margin: 2;
+  font-size: 35px;
+  color: rgb(105, 42, 69);
+  letter-spacing: 5px;
+  font-family: 'Chewy', cursive;
+
+}
+
+h2 {
+  margin: 0;
+}
+
+.budin {
+  margin-top: 10px;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 8px 25px;
+  margin-left: 100px;
+}
+
+.tips {
+  width: 300px;
+  background-color: #FAE1DD;
+  padding: 50px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
+  box-shadow: 0 8px 25px;
+  height: 250px;
+  text-align: left;
+
+}
+
+ul {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  list-style: none;
+  border-radius: 20px;
+  line-height: 1.3;
+  font-size: 16px;
+
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.menu {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  list-style: none;
+  border-radius: 20px;
+  line-height: 1.6;
+}
+.menum {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.caja1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.caja2 {
+  margin: 0;
+  list-style: decimal;
+  padding-left: 10px;
+  list-style-position: outside;
+
+}
+
+.boton {
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #F7C5CC;
+  color: #0f1115;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .5);
+  text-align: right;
+  display: inline-flex;
+  align-items: center;
+}
+.boton:hover{
+  color: #e91e95;
+
+}
+
+.ingredientes {
+  width: 400px;
+  background-color: #FAE1DD;
+  padding: 50px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 60px;
+  box-shadow: 0 8px 25px;
+  height: 500px;
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.receta {
+  width: 500px;
+  background-color: #FAE1DD;
+  padding: 40px 50px 90px 50px ;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  box-shadow: 0 8px 25px;
+  height: 500px;
+}
+
+.tilo {
+  font-size: 25px;
+  text-align: left;
+  font-family:"Comic Relief", system-ui;
+  color: #333333;
+}
+
+section {
+  max-width: 1100px;
+  margin: 24px auto 48px;
+  padding: 0 16px;
+  display: flex;
+  gap: 24px;
+}
+
+.items {
+  align-items: left;
+  text-align: left;
+  width: 300px;
+}
+
+.items2 {
+  font-size: 20px;
+  width: 500px;
+  list-style: decimal;
+  text-align: left;
+  display: list-item;
+}
+
+
+footer {
+  background-color: rgb(115, 101, 101);
+  text-align: center;
+  display: flex;          
+  height: 19vh;     
+  margin-bottom: 1px;      
+}
+
+footer .columna {
+  flex: 1 1 0;             
+  border: 2px solid #000;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+footer ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  text-align: center;
+}
+footer li {
+  display: block;          
+  width: auto;
+  height: auto;
+  margin: 0px 0;
+}
+
+footer #columna3 ul {
+  display: inline-flex;
+  gap: 15px;
+}
+footer #columna3 li {
+  display: inline-block;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+  gap: 10px;
+  color: rgb(92, 153, 92);
+}
+
+footer .icons-fo {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+h4{
+  font-size: 25px;
+  margin: 18px auto 8px;
+}
+#volver-arriba {
+  color: tomato;       
+  font-weight: bold;   
+}
+#volver-arriba:hover {
+  color: gold;         
+}
