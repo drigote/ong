@@ -1,0 +1,51 @@
+body{
+    background-color:#f8e898;
+}
+h1{ 
+    margin-top: 100px; 
+    font-size: 45px; 
+    color: red; 
+    font-family:'Press Start 2P';
+}
+h2{
+    color:black; 
+    font-size: 25px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+}
+img{
+    width: 550px; 
+    height: 340px; 
+    margin-top: 50px;
+    box-shadow: 0 8px 25px;
+
+}
+h3{
+    margin-top: 80px;
+}
+.naruto{ 
+    font-size: 20px; 
+    font-family:'Press Start 2P'; 
+    background-color: coral; 
+    text-decoration: none; 
+    padding: 10px 10px; 
+    border-radius:15px; 
+    margin-right: 50px;
+    box-shadow: 0 8px 25px;
+}
+.naruto:hover{
+    color: gold;
+}
+.dbf{
+    margin-top: 50px;
+    font-size: 20px; 
+    font-family:'Press Start 2P'; 
+    background-color: coral; 
+    text-decoration: none; 
+    padding: 10px 10px; 
+    border-radius:15px;
+    box-shadow: 0 8px 25px;
+}
+.dbf:hover{
+    color: gold;
+}
