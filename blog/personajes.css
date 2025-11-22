@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.anchor-target {
+    scroll-margin-top: 120px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("imgblog/fondorojo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(rgba(36, 22, 22, 0.45));
+    z-index: -1;
+}
+
+/* HEADER */
+.containerhdr {
+    background-color: #800a0a;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.containerhdr img {
+    height: 100%;
+    width: auto;
+}
+
+.containerhdr ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.containerhdr li a {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: .25s ease;
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    font-size: 17px;
+    font-family: "Cinzel", serif;
+    position: relative;
+}
+
+.containerhdr li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .30s ease;
+}
+
+.containerhdr li a:hover::after,
+.containerhdr li a[aria-current="page"]::after,
+.containerhdr li a.active::after {
+    transform: scaleX(1);
+}
+
+.containerhdr li a.active,
+.containerhdr li a[aria-current="page"] {
+    color: #000;
+}
+
+/* MAIN */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* SECTION */
+.container section {
+    flex: 1;
+    background-color: #403f3d;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(139, 186, 177, 0.5);
+}
+
+.container section h4 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: rgb(233, 73, 10);
+    font-family: "Texturina", serif;
+}
+
+.container section h5 {
+    font-size: 28px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color: #ffcf9cfc;
+    font-family: "Cinzel", serif;
+}
+
+.container section p {
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 0 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.line {
+    text-decoration: none;
+    color: rgba(255, 217, 0, 0.833);
+}
+
+.line:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+b {
+    color: hsla(0, 86%, 70%, 0.858);
+}
+
+hr {
+    border-color: rgb(168, 151, 56);
+}
+
+.flechadmc {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flechadmcarriba {
+    height: 20px;
+    width: 30px;
+}
+
+/* ASIDE */
+.info2 {
+    width: 350px;
+    background-color: rgba(20, 20, 20, .92);
+    color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+
+/* Tarjetas aside */
+.ficha-juego {
+    background-color: #780000;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.ficha-juego h2 {
+    text-align: center;
+    background-color: #960000;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.imagaside {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+    background-color: #800a0a;
+    text-align: center;
+    display: flex;
+    height: 19vh;
+    margin-bottom: 1px;
+    font-size: 24px;
+    font-family: "Cinzel", serif;
+}
+
+footer .columna {
+    flex: 1 1 0;
+    border: 2px solid #000;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+}
+
+footer #columna3 ul {
+    display: inline-flex;
+    gap: 15px;
+}
+
+footer #columna3 li {
+    display: inline-block;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    gap: 10px;
+    color: rgb(169, 165, 159);
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer .icons-fo {
+    width: 30px;
+    height: 30px;
+    display: block;
+    transition: transform .25s ease, filter .25s ease;
+}
+
+footer .icons-fo:hover {
+    transform: translateY(-8px) scale(1.08) rotate(-2deg);
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .6)) saturate(1.15);
+}
+
+/* imagen para que se vea desde el celu */
+.personajecelu {
+    display: none;
+}
+
+.personajeceluimg {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* tabla para tener en el responsive y en escritorio */
+.tablapersonajes,
+.tablapersonajescelu {
+    background-color: #1a1a1a;
+    border: 2px solid #960000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tablapersonajes h2,
+.tablapersonajescelu h2 {
+    background-color: #960000;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+    font-family: "Cinzel", serif;
+    border-bottom: 2px solid #700000;
+}
+
+.tablapersonajes table,
+.tablapersonajescelu table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablapersonajes td,
+.tablapersonajescelu td {
+    border-top: 1px solid #700000;
+    padding: 10px;
+    font-size: 17px;
+    font-family: "Marcellus SC", serif;
+}
+
+.tablapersonajes a,
+.tablapersonajescelu a {
+    text-decoration: none;
+    color: #f8d983;
+    display: block;
+    transition: background-color .3s, color .3s;
+}
+
+.tablapersonajes a:hover,
+.tablapersonajescelu a:hover {
+    background-color: #800a0a;
+    color: #fff;
+}
+
+.tablapersonajescelu {
+    display: none;
+}
+
+.tablapersonajes {
+    display: block;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .containerhdr {
+        height: auto;
+        padding: 10px 12px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerhdr img {
+        height: 56px;
+    }
+
+    .containerhdr ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 6px 0 10px;
+    }
+
+    .containerhdr li a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 16px;
+        margin: 24px auto;
+    }
+
+    .container section {
+        padding: 20px;
+    }
+
+    .container section h4 {
+        font-size: 36px;
+    }
+
+    .container section h5 {
+        font-size: 22px;
+    }
+
+    .container section p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .personajecelu {
+        display: block;
+        max-width: 520px;
+        margin: 8px auto 16px;
+        padding: 6px;
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .info2 {
+        display: none;
+    }
+
+    .tablapersonajescelu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 10px auto 20px;
+    }
+
+    .tablapersonajescelu table {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tablapersonajescelu td {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #700000;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .containerhdr ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer .columna {
+        border: none;
+        border-top: 1px solid #000;
+    }
+}

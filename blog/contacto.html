@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Devil May Cry 3 — Contacto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus+SC&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="contacto.css" />
+</head>
+
+<body>
+    <header class="containerhdr" id="sec-armas-top">
+        <img src="imgblog/dmclogo.png" alt="Logotipo Devil May Cry 3">
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="blogini.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="gameplay.html">Gameplay</a></li>
+                <li><a href="datos.html">Datos</a></li>
+                <li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <article class="info">
+                <h4>Contacto</h4>
+                <p>Completá el formulario y te respondo a la brevedad.</p>
+                <form class="contact-form" autocomplete="on">
+                    <div class="contact-avatarbox">
+                        <img src="imgblog/danteicon.jpg" alt="Devil May Cry 3" class="contact-avatar">
+                    </div>
+
+                    <label for="cname"><b>Nombre</b></label>
+                    <input type="text" id="cname" name="name" placeholder="Tu nombre" required>
+
+                    <label for="cemail"><b>Email</b></label>
+                    <input type="email" id="cemail" name="email" placeholder="ejemplo@ejemplo.com" required>
+
+                    <label for="csubject"><b>Asunto</b></label>
+                    <select id="csubject" name="subject" required>
+                        <option value="" disabled selected>Elegí un asunto</option>
+                        <option>Consulta general</option>
+                        <option>Colaboración</option>
+                        <option>Feedback del sitio</option>
+                        <option>Otro</option>
+                    </select>
+
+                    <label for="cmsg"><b>Mensaje</b></label>
+                    <textarea id="cmsg" name="message" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+
+                    <label class="novedades">
+                        <input type="checkbox" name="newsletter">
+                        Quiero recibir novedades
+                    </label>
+
+                    <div class="contact-actions">
+                        <button type="reset" class="contact-a contact-cancel">Cancelar</button>
+                        <button type="submit" class="contact-a contact-send">Enviar</button>
+                    </div>
+                </form>
+
+            </article>
+
+
+        </section>
+    </main>
+
+    <footer id="abajo">
+        <div id="columna1" class="columna">
+            <h5>Rodrigo Barconte</h5>
+            <ul>
+                <li class="contactolist">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=barconterodrigo@gmail.com&su=Consulta&body="
+                        target="_blank">
+                        barconterodrigo@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="columna2" class="columna">
+            <h5>Newsletter</h5>
+            <a id="volver-arriba" href="#">Volver arriba</a>
+            <a id="volver-linktree" href="../index.html">LinkTree</a>
+        </div>
+
+        <div id="columna3" class="columna">
+            <h5>Mis Redes</h5>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                        <img class="icons-fo" src="../paginap/img/social.png" alt="Instagram">
+                    </a></li>
+                <li><a href="https://x.com/?lang=es" target="_blank">
+                        <img class="icons-fo" src="../paginap/img/twitter.png" alt="Twitter">
+                    </a></li>
+                <li><a href="https://discord.com/users/306153974099345408" target="_blank">
+                        <img class="icons-fo" src="../paginap/img/discord5.png" alt="Discord">
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
