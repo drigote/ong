@@ -64,7 +64,7 @@ body {
     color: #555555;
 }
 
-/* NAV + ZONA MENÚ */
+/* nav y menu */
 
 .zona-menu {
     display: flex;
@@ -105,7 +105,7 @@ body {
     color: #222222;
 }
 
-/* SUBMENÚS (desktop) */
+/* submenu */
 
 .submenu-navegacion {
     position: absolute;
@@ -142,7 +142,7 @@ body {
     background-color: #9bb443;
 }
 
-/* BOTÓN DONAR */
+/* boton donar */
 
 .boton-donar {
     text-decoration: none;
@@ -164,7 +164,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* BOTÓN MENÚ HAMBURGUESA (mobile) */
+/* boton menu hamburguesa */
 
 .boton-menu {
     display: none;
@@ -188,7 +188,7 @@ body {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* animación hamburguesa */
+/* animacion hamburguesa */
 
 .boton-menu.activo .linea:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
@@ -202,7 +202,7 @@ body {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* BOTONES GENERALES */
+/* botones  */
 
 .boton-primario,
 .boton-secundario {
@@ -253,7 +253,7 @@ main {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* PORTADA DONACIÓN */
+/* portada donacion */
 
 .seccion-portada-donacion {
     text-align: center;
@@ -283,9 +283,7 @@ main {
     line-height: 1.7;
 }
 
-/* ---------------------- */
 /* SECCIÓN DONACIONES     */
-/* ---------------------- */
 
 .seccion-donaciones {
     margin-bottom: 32px;
@@ -356,7 +354,7 @@ main {
     font-size: 1.2rem;
 }
 
-/* mini tarjetas de impacto */
+/*mini tarjetas de impacto*/
 
 .tarjetas-impacto-rapido {
     display: flex;
@@ -390,7 +388,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* Tarjeta calculadora */
+/* tarjeta calculadora */
 
 .tarjeta-calculadora {
     flex: 1 1 320px;
@@ -418,7 +416,7 @@ main {
     margin-bottom: 14px;
 }
 
-/* Tabs frecuencia */
+/* tabs frecuencia */
 
 .calc-toggle {
     display: flex;
@@ -447,7 +445,7 @@ main {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Montos rápidos */
+/* montos rapidos */
 
 .calc-montos {
     display: grid;
@@ -481,7 +479,7 @@ main {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* Otro monto + tipo de impacto */
+/* otro monto y tipo de impacto */
 
 .calc-otro-monto,
 .calc-impacto-tipo {
@@ -532,14 +530,14 @@ main {
     background-color: #ffffff;
 }
 
-/* Botón calcular */
+/* boton calcular */
 
 .boton-calcular {
     width: 100%;
     margin-bottom: 12px;
 }
 
-/* Resultado */
+/* resultado */
 
 .resultado-calculadora {
     background-color: #f4fafb;
@@ -566,7 +564,7 @@ main {
     color: #6b7280;
 }
 
-/* CIERRE */
+/* cierre */
 
 .seccion-cierre-donacion {
     margin-top: 8px;
@@ -672,7 +670,7 @@ main {
     color: #d0d0d0;
 }
 
-/* ANIMACIÓN APARECER */
+/* animacion aparecer */
 
 @keyframes aparecer-deslizar {
     to {
@@ -680,8 +678,6 @@ main {
         transform: translateY(0);
     }
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
     .contenedor-encabezado {
@@ -779,4 +775,5 @@ main {
     .seccion-portada-donacion h1 {
         font-size: 1.7rem;
     }
+
 }
