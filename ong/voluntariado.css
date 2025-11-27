@@ -64,7 +64,7 @@ body {
     color: #555555;
 }
 
-/* NAV + ZONA MENÚ */
+/* nav y menu */
 
 .zona-menu {
     display: flex;
@@ -105,7 +105,7 @@ body {
     color: #222222;
 }
 
-/* SUBMENÚS  */
+/* submenus  */
 
 .submenu-navegacion {
     position: absolute;
@@ -188,7 +188,7 @@ body {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* animación hamburguesa */
+/* animacion hamburguesa */
 
 .boton-menu.activo .linea:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
@@ -717,4 +717,5 @@ main {
     .seccion-portada-voluntariado h1 {
         font-size: 1.7rem;
     }
+
 }
