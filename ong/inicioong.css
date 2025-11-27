@@ -104,7 +104,7 @@ body {
     color: #222222;
 }
 
-/* SUBMENÚS  */
+/* submenus  */
 
 .submenu-navegacion {
     position: absolute;
@@ -141,7 +141,7 @@ body {
     background-color: #9bb443;
 }
 
-/* BOTÓN DONAR */
+/* boton donar */
 
 .boton-donar {
     text-decoration: none;
@@ -163,7 +163,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* BOTÓN MENÚ HAMBURGUESA para celu */
+/* boton menu hamburguesa para celu */
 
 .boton-menu {
     display: none;
@@ -187,7 +187,7 @@ body {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* animación hamburguesa */
+/* animacion hamburguesa */
 
 .boton-menu.activo .linea:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
@@ -288,7 +288,7 @@ main {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* INTRODUCCIÓN */
+/* introduccion */
 
 .seccion-introduccion {
     text-align: center;
@@ -397,7 +397,7 @@ main {
     text-decoration: underline;
 }
 
-/* RESUMEN (otras páginas) */
+/* RESUMEN de las paginas */
 
 .seccion-resumen {
     text-align: center;
@@ -572,7 +572,7 @@ main {
     color: #d0d0d0;
 }
 
-/* ANIMACIÓN SCROLL REVEAL */
+/* animacion scroll */
 
 .revelar-scroll {
     opacity: 0;
@@ -691,4 +691,5 @@ main {
     .tarjeta-proyecto {
         max-width: 100%;
     }
+
 }
