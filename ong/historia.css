@@ -58,7 +58,7 @@ body {
     color: #555555;
 }
 
-/* NAV + ZONA MENÚ */
+/* nav y menu*/
 
 .zona-menu {
     display: flex;
@@ -100,7 +100,7 @@ body {
     color: #222222;
 }
 
-/* SUBMENÚS desktop */
+/* submenus desktop */
 
 .submenu-navegacion {
     position: absolute;
@@ -137,7 +137,7 @@ body {
     background-color: #9bb443;
 }
 
-/* BOTÓN DONAR HEADER */
+/* boton donar */
 
 .boton-donar {
     text-decoration: none;
@@ -159,7 +159,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* BOTÓN MENÚ HAMBURGUESA */
+/* boton menu hamburguesa*/
 
 .boton-menu {
     display: none;
@@ -568,4 +568,5 @@ main {
     .tarjeta-hito {
         max-width: 100%;
     }
+
 }
