@@ -58,7 +58,7 @@ body {
     color: #555555;
 }
 
-/* NAV + ZONA MENÚ */
+/* nav y menu */
 
 .zona-menu {
     display: flex;
@@ -100,7 +100,7 @@ body {
     color: #222222;
 }
 
-/* SUBMENÚS*/
+/* submenus*/
 
 .submenu-navegacion {
     position: absolute;
@@ -137,7 +137,7 @@ body {
     background-color: #9bb443;
 }
 
-/* BOTÓN DONAR HEADER */
+/* boton donar header */
 
 .boton-donar {
     text-decoration: none;
@@ -159,7 +159,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* BOTÓN MENÚ HAMBURGUESA */
+/* boton menu hamburguesa*/
 
 .boton-menu {
     display: none;
@@ -183,7 +183,7 @@ body {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* animación hamburguesa */
+/* animacion hamburguesa */
 
 .boton-menu.activo .linea:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
@@ -208,7 +208,7 @@ main {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ENCABEZADO EQUIPO */
+/* encabezado equipo */
 
 .seccion-encabezado-equipo {
     text-align: center;
@@ -540,4 +540,5 @@ main {
     .tarjeta-equipo {
         max-width: 100%;
     }
+
 }
