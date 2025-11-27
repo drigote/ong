@@ -65,7 +65,7 @@ body {
     color: #555555;
 }
 
-/* NAV + MENÚ */
+/* nav y menu */
 
 .zona-menu {
     display: flex;
@@ -107,7 +107,7 @@ body {
     color: #222222;
 }
 
-/* SUBMENÚS */
+/* submenus */
 
 .submenu-navegacion {
     position: absolute;
@@ -144,7 +144,7 @@ body {
     background-color: #9bb443;
 }
 
-/* BOTÓN DONAR */
+/* boton donar */
 
 .boton-donar {
     text-decoration: none;
@@ -166,7 +166,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* BOTÓN MENÚ (MOBILE) */
+/* boton menu celu */
 
 .boton-menu {
     display: none;
@@ -626,4 +626,5 @@ main {
     .bloque-info-contacto h1 {
         font-size: 1.6rem;
     }
+
 }
